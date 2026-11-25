@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>快存图片 v1.3.0 · 安装与使用</title>
+  <style>
+    :root{font:16px/1.75 "Segoe UI","Microsoft YaHei",system-ui,sans-serif;color:#17304e;background:#edf3fb;box-sizing:border-box}
+    *,*::before,*::after{box-sizing:inherit}body{margin:0 auto;padding:32px 18px;max-width:760px}
+    header{padding:25px 28px;color:#fff;background:#142f54;border-radius:16px}
+    h1{font-size:clamp(25px,6vw,36px);margin:0}header p{margin:4px 0;color:#d0e4ff}
+    section{padding:20px 26px;margin:14px 0;background:#fff;border:1px solid #dce8f5;border-radius:13px}
+    h2{font-size:19px;margin:0 0 6px}ol,p{margin:8px 0}ol{padding-left:23px}li+li{margin-top:7px}
+    code{padding:2px 6px;border-radius:4px;background:#eaf2ff;color:#183f70;overflow-wrap:anywhere}
+    .muted{color:#4d647c}@media(max-width:560px){body{padding:15px 12px}header,section{padding:16px 18px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>快存图片 v1.3.0</h1>
+    <p>在 Chrome 里直接保存图片和视频</p>
+  </header>
+  <main>
+    <section>
+      <h2>更新或安装扩展</h2>
+      <ol>
+        <li>解压 ZIP，找到里面的 <code>quick-image-saver</code> 文件夹。</li>
+        <li><strong>已有旧版</strong>　把这个文件夹里的文件覆盖到旧扩展的原安装目录，再到 <code>chrome://extensions</code> 点击「重新加载」。</li>
+        <li><strong>首次安装</strong>　在 <code>chrome://extensions</code> 启用开发者模式，点击「加载已解压的扩展程序」，选中 <code>quick-image-saver</code>。</li>
+      </ol>
+    </section>
+    <section>
+      <h2>保存视频</h2>
+      <ol>
+        <li>第一次使用时，在「快存图片」弹窗里开启「保存视频」。开关会记住状态。</li>
+        <li>打开 B 站、YouTube 或 X 的单条视频详情页，点弹窗里的<strong>「保存当前视频」</strong>。视频右键菜单也保留「保存视频」。</li>
+        <li>MP4 会保存到 Chrome 的下载位置。弹窗显示处理进度和保存后的文件路径。</li>
+      </ol>
+      <p class="muted">平台返回独立音轨和画面时，扩展会在浏览器内合并。遇到平台限制、登录要求或网络错误时，弹窗会给出提示。</p>
+    </section>
+    <section>
+      <h2>保存图片</h2>
+      <p>把鼠标移到图片上，点「↓ 快存」，文件会进入扩展设置里选定的图片文件夹。更新后请刷新此前已打开的图片网页。</p>
+    </section>
+  </main>
+</body>
+</html>

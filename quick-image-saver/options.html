@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>快存图片 · 保存位置</title><link rel="stylesheet" href="ui.css"></head>
+<body><main class="options">
+  <header class="header"><div class="brand"><img src="icons/48.png" width="42" height="42" alt=""><div><h1>快存图片</h1><p>一键保存网页图片</p></div></div><span class="tag">QUICK IMAGE SAVER / 1.3.0</span></header>
+  <section class="card hero"><span class="tag">SAVE TO YOUR FOLDER</span><h2>你选哪里，就存哪里。</h2><p class="muted">在电脑上选择你要保存的文件夹，点击「↓ 快存」就直接存进去。桌面、不同磁盘或更深层的文件夹，都由你决定。</p>
+    <div class="folder"><h2>当前保存文件夹</h2><p id="folder-name" class="folder-name">正在读取…</p><span id="status" class="status">检查保存权限</span><p class="folder-hint">只保存到你选中并授权的实际位置，不会改存到其他目录。这里显示文件夹名称，完整路径以系统选择器为准。</p></div>
+    <div class="actions"><button id="choose" type="button" class="primary">选择保存文件夹</button><button id="authorize" type="button" class="secondary" hidden>重新授权当前文件夹</button></div>
+    <p id="notice" class="notice" role="status" aria-live="polite" hidden></p>
+    <div class="test-area"><button id="test" type="button" class="secondary" disabled>保存一张测试图片</button><span class="detail">　检查文件夹能否正常写入</span></div>
+  </section>
+  <div class="grid">
+    <section class="card"><h3>开始使用</h3><ol class="steps"><li><strong>选择文件夹</strong>点击上方按钮，在系统窗口中选择并授权保存位置。</li><li><strong>打开或刷新网页</strong>首次安装后，刷新已经打开的网页。</li><li><strong>移到图片，点击快存</strong>成功后会提示文件夹和文件名。保存位置可以随时切换。</li></ol></section>
+    <section class="card"><h3>按你的习惯保存</h3><label class="switch-row"><span class="setting-label">显示图片下载按钮<small>关闭后，网页上的快存按钮会隐藏。</small></span><input id="enabled" type="checkbox" class="toggle" checked aria-label="显示图片下载按钮"></label><p class="detail">同名自动编号，例如 photo (1).png。保留图片数据，不压缩、不转码。</p><p class="detail">切换位置只影响之后加入的保存任务，已排队的图片仍保存到当时选定的文件夹。</p><p class="detail">权限失效时，请点击「重新授权」。没有写入权限时会停止并提示，不会另选目录保存。</p><p class="detail">支持普通网页中的图片。浏览器内部页面、商店页面、画布和部分防盗链图片可能无法保存。</p></section>
+  </div>
+  <footer>图片直接来自原网站，保存到你授权的本地文件夹。无第三方上传、无账号、无统计追踪。</footer>
+</main><script type="module" src="options.js"></script></body></html>
